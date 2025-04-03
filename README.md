@@ -11,6 +11,7 @@ Este projeto é uma expansão do teste prático para vaga de estágio, transform
 
 ### Pré-requisitos
 - [Docker](https://www.docker.com/get-started/) (v20+)
+> Caso esteja no windows não é necessário baixar o compose. pois ele ja vem com a instalação do Docker Desktop.
 - [Docker Compose](https://docs.docker.com/compose/install/) (v2+)
 - [GIT](https://git-scm.com/downloads)
 - Portas disponíveis:
