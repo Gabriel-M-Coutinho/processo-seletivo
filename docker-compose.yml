@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   mongodb:
     image: mongo:latest
@@ -18,7 +16,7 @@ services:
       dockerfile: Dockerfile
     container_name: backend
     ports:
-      - "8081:8081" # Mapeia a porta externa 8081 para o serviço interno backend
+      - "8081:8081"
     depends_on:
       - mongodb
     environment:
@@ -33,7 +31,7 @@ services:
       dockerfile: Dockerfile
     container_name: frontend
     ports:
-      - "3000:3000" # Mapeia a porta externa 3000 para o serviço interno frontend
+      - "3000:3000"
     depends_on:
       - backend
     networks:

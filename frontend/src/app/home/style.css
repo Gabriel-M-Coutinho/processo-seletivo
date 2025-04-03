@@ -1,0 +1,116 @@
+/* Estilos para a página Home */
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 2rem;
+  }
+  
+  .dashboard-card {
+    width: 100%;
+    max-width: 500px;
+    background-color: var(--darker-bg);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+  }
+  
+  .user-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .user-header h2 {
+    color: var(--text-primary);
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .user-header p {
+    color: var(--text-secondary);
+  }
+  
+  .user-info {
+    background-color: var(--input-bg);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .info-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--input-border);
+  }
+  
+  .info-row:last-child {
+    border-bottom: none;
+  }
+  
+  .info-label {
+    color: var(--text-secondary);
+    font-weight: 500;
+  }
+  
+  .info-value {
+    color: var(--text-primary);
+  }
+  
+  .loading-spinner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: var(--primary);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  
+  .error-card {
+    text-align: center;
+    padding: 1.5rem;
+  }
+  
+  .error-card h3 {
+    color: #ff4d4f;
+    margin-bottom: 1rem;
+  }
+  
+  .logout-btn {
+    background-color: #ff4d4f !important;
+  }
+  
+  .logout-btn:hover {
+    background-color: #ff7875 !important;
+  }
+  
+  .empty-state {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-secondary);
+  }
+  
+  /* Responsivo */
+  @media (max-width: 600px) {
+    .dashboard-card {
+      padding: 1.5rem;
+    }
+    
+    .user-info {
+      padding: 1rem;
+    }
+  }

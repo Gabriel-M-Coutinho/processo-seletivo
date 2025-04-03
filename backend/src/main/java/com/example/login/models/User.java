@@ -13,6 +13,8 @@ public class User implements UserDetails {
     @Id
     private String id;
 
+    public User(){}
+
     public User(String name, String email, String password) {
         this.name = name;
         this.email = email;
