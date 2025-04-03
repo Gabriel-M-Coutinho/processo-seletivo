@@ -19,6 +19,6 @@ public class UserService {
             throw new Error("id enviado não existe");
         }
         return user0.get();
-
     }
+
 }
