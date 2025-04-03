@@ -12,6 +12,7 @@ Este projeto é uma expansão do teste prático para vaga de estágio, transform
 ### Pré-requisitos
 - [Docker](https://www.docker.com/get-started/) (v20+)
 - [Docker Compose](https://docs.docker.com/compose/install/) (v2+)
+- [GIT](https://git-scm.com/downloads)
 - Portas disponíveis:
   - **3000** - Frontend Next.js
   - **8081** - Backend Spring Boot
@@ -23,13 +24,13 @@ Este projeto é uma expansão do teste prático para vaga de estágio, transform
 
 1. **Clone o repositório**
    ```bash
-   git clone <url-do-repositorio>
-   cd <nome-da-pasta>
+   git clone https://github.com/Gabriel-M-Coutinho/processo-seletivo.git
+   cd processo-seletivo
    ```
 
 2. **Execute com Docker Compose**
    ```bash
-   docker-compose up
+    docker-compose up --build -d
    ```
    Este comando irá:
   - Iniciar um container com MongoDB
