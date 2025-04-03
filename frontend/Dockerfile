@@ -8,7 +8,7 @@ RUN apk add --no-cache libc6-compat
 # Copia arquivos de configuração
 COPY package.json package-lock.json ./
 COPY tsconfig.json ./
-COPY next-env.d.ts ./
+COPY next-env.d.ts* ./
 
 # Instala dependências
 RUN npm ci
