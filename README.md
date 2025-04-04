@@ -29,10 +29,15 @@ Este projeto é uma expansão do teste prático para vaga de estágio, transform
    cd processo-seletivo
    ```
 
-2. **Execute com Docker Compose**
+2. **Execute com Docker Compose Windows**
    ```bash
     docker-compose up --build -d
    ```
+  **Execute com Docker Compose Linux**
+   ```bash
+    docker compose up --build -d
+   ```
+   
    Este comando irá:
   - Iniciar um container com MongoDB
   - Construir e iniciar o backend Spring Boot
